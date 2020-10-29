@@ -15,9 +15,11 @@ _srcname=linux
 source=(
   'git+https://kernel.googlesource.com/pub/scm/linux/kernel/git/torvalds/linux'
   config         # the main kernel config file
+  navi10.patch
 )
 sha256sums=('SKIP'
-            '4876208fb4c758dfe73f36139a69d47c9d6dbe32f30d2fdb3140d4591fbd687c')
+            '4876208fb4c758dfe73f36139a69d47c9d6dbe32f30d2fdb3140d4591fbd687c'
+            '883b0ebab749b569e6f2e0cdc4bd851637d3b4c32cba9dd646f07a11c2866903')
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase
